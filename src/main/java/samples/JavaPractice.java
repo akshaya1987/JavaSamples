@@ -6,18 +6,17 @@ public class JavaPractice {
         Person secondPerson = new Person(37, "Amar");
 
         fun(firstPerson, secondPerson);
-        System.out.println(firstPerson);
-        System.out.println(secondPerson);
+        System.out.println(firstPerson.name);
+        System.out.println(secondPerson.name);
     }
 
-    public static void fun(Person x, Person y){
-        x = new Person (45, "Puneeth");
-        y = new Person (43, "Jayaram");
+    public static void fun(Person x, Person y) {
+        x.name = null;
+        y.name = null;
     }
 }
 
-class Person
-{
+class Person {
     int age;
     String name;
 
